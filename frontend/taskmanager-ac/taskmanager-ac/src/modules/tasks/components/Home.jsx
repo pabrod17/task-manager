@@ -1,18 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-
+import hola from "@/assets/hola.png";
 function Home() {
   return (
     <div className="bg-background min-h-screen flex flex-col items-center justify-center text-center px-6">
-      <h1
-        className="bg-gradient-to-b from-black 
-        to-gray-300/80 bg-clip-text text-6xl sm:text-7xl md:text-8xl 
-        leading-none font-semibold text-transparent 
-        dark:from-white dark:to-slate-900/10 
-        hover:opacity-80 transition-opacity mb-10"
-      >
-        Task Management
-      </h1>
+      <img
+        src={hola}
+        alt="GTA 6 Background"
+        width={2560}
+        height={1440}
+        className={`w-full h-full object-cover duration-500 ${
+          oneYearMode || blackFridayMode || newYearMode || valentinEffects
+            ? "scale-110 brightness-125"
+            : thaiBirthdayEffects
+              ? "scale-105 brightness-100"
+              : "scale-100 brightness-100"
+        }`}
+        loading="eager"
+        decoding="async"
+      />
             <Link to="/tasks">
         <Button
           size="lg"
