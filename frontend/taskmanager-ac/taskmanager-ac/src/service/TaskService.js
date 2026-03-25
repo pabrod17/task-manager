@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/api/tasks';
+// const API_URL = 'http://localhost:8080/api/tasks';
+const API_URL = 'https://keen-dedication-production.up.railway.app/api/tasks';
 
 export const getTasks = async () => {
   const response = await axios.get(API_URL);
