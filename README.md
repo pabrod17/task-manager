@@ -84,3 +84,8 @@ API_URL=http://localhost:8080/api/tasks
 
 ## 📘 Documentation
 For detailed technical documentation, see [`/doc/documentation.md`](./doc/documentation.md) or download the [PDF version](./doc/documentation.pdf).
+
+## 🌐 Production URL
+```env
+PROD_URL=https://task-manager-lake-tau-77.vercel.app
+```

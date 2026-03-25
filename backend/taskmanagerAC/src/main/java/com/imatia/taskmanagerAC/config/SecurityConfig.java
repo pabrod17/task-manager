@@ -18,7 +18,9 @@ public class SecurityConfig {
         config.setAllowCredentials(false);
 
         config.setAllowedOrigins(List.of(
-                "http://localhost:3000", "http://localhost:5173"
+                "http://localhost:3000", "http://localhost:5173",
+                "https://task-manager-git-main-pabrod17-gmailcoms-projects.vercel.app/",
+                "https://task-manager-lake-tau-77.vercel.app/"
         ));
 
         config.setAllowedMethods(List.of("GET","POST","PUT","PATCH","DELETE","OPTIONS"));
